@@ -121,10 +121,13 @@ function switchTurn(clickedButton) {
     document.getElementById("turnInfo").innerHTML = "your turn";
   } else if (checkGame == gameStatus.HUMAN_WINS) {
     document.getElementById("turnInfo").innerHTML = "you win";
+    disableGameBoardButtons();
   } else if (checkGame == gameStatus.COMPUTER_WINS) {
     document.getElementById("turnInfo").innerHTML = "computer win";
+    disableGameBoardButtons();
   } else {
     document.getElementById("turnInfo").innerHTML = "Draw Game";
+    disableGameBoardButtons();
   }
 }
 
@@ -142,4 +145,12 @@ function makeComputerMove() {
   button.classList.add("o");
   button.innerHTML = "o";
   switchTurn();
+}
+
+function disableGameBoardButtons() {
+  /// disable all buttons after game ends
+  const buttons = getGameBoardButtons();
+  for (let button of buttons) {
+    button.setAttribute("disabled", "");
+  }
 }

@@ -32,8 +32,8 @@ The game displays the current turn, whether it's the player's turn or the comput
 
 ### Links
 
-- Solution URL: [Tic-Tac-Toe]()
-- Live Site URL: [Tic-Tac-Toe]()
+- Solution URL: [Tic-Tac-Toe](https://github.com/lashasuxa/tic-tac-toe-sample)
+- Live Site URL: [Tic-Tac-Toe](https://lashasuxa.github.io/tic-tac-toe-sample/)
 
 ## My process
 
